@@ -6,13 +6,22 @@ export const TodoCard = ({ children, index, del, handleEdit }) => {
     del(children);
   }
   return (
-    <li className="todoItem" key={index}>
-      <p>{children}</p>
-      <div className="actionsContainer">
-        <button onClick={() => changeInner()}>
+    <li
+      className="flex items-center p-3.5 rounded-[14px] bg-white gap-3"
+      key={index}
+    >
+      <p className="flex-1 font-inter">{children}</p>
+      <div className="flex hitems-center gap-3">
+        <button
+          onClick={() => changeInner()}
+          className="hover:opacity-70 cursor-pointer"
+        >
           <i className="fa-regular fa-pen-to-square"></i>
         </button>
-        <button onClick={() => del(children)}>
+        <button
+          onClick={() => del(children)}
+          className="hover:opacity-70 cursor-pointer"
+        >
           <i className="fa-regular fa-trash-can"></i>
         </button>
       </div>
