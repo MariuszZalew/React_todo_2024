@@ -3,6 +3,8 @@ export const TodoInput = ({ setTodos, inputP, setInputP }) => {
     setTodos(inputP);
     setInputP("");
   }
+  const isButtonDisabled = inputP.trim() === "";
+
   return (
     <header className="flex items-stretch max-w-[800px] w-full mx-auto gap-4 font-marker">
       <input
@@ -16,6 +18,7 @@ export const TodoInput = ({ setTodos, inputP, setInputP }) => {
       <button
         onClick={setTodosAndClear}
         className="p-3.5 rounded-[14px] bg-white   hover:opacity-70 cursor-pointer text-xl"
+        disabled={isButtonDisabled}
       >
         Add
       </button>

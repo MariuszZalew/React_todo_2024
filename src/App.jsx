@@ -49,19 +49,14 @@ function App() {
         setInputP={setInputP}
         setTodos={handleSetTodos}
       />
-      {/* created a list of components in react, bug free */}
-      {/* added local storage capacity, fixed a bug in a meantime */}
       <TodoList
         todos={todos}
         deleteItem={handleDeleteTodos}
         handleEdit={handleEditTodos}
       />
-      {/* add tailwind and replace css */}
-      {/* change fonts and view */}
       {/* create react icons fontAwesome */}
       {/* use uuid for keys in react */}
       {/* disable on empty */}
-      {/* refactor useEffect */}
     </div>
   );
 }
