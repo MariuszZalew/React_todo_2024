@@ -56,7 +56,6 @@ function App() {
       />
       {/* create react icons fontAwesome */}
       {/* use uuid for keys in react */}
-      {/* disable on empty */}
     </div>
   );
 }
