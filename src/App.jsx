@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 import { TodoInput } from "./components/TodoInput";
 import { TodoList } from "./components/TodoList";
+import "./App.css";
 
 function App() {
   let orgTodos = ["some text here", "another one", "and a little bit of it"];

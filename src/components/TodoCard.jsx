@@ -11,7 +11,7 @@ export const TodoCard = ({ children, index, del, handleEdit }) => {
       key={index}
     >
       <p className="flex-1 font-inter">{children}</p>
-      <div className="flex hitems-center gap-3">
+      <div className="flex items-center gap-3">
         <button
           onClick={() => changeInner()}
           className="hover:opacity-70 cursor-pointer"
