@@ -1,12 +1,10 @@
+import { useCallback } from "react";
 export const TodoInput = ({ setTodos, inputP, setInputP }) => {
   const setTodosAndClear = useCallback(() => {
     setTodos(inputP);
     setInputP("");
   }, [setTodos, inputP, setInputP]);
-  function setTodosAndClear() {
-    setTodos(inputP);
-    setInputP("");
-  }
+
   const isButtonDisabled = inputP.trim() === "";
 
   const handleKeyDown = (e) => {
