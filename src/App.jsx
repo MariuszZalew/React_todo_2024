@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 import { TodoInput } from "./components/TodoInput";
 import { TodoList } from "./components/TodoList";
+import "./App.css";
 
 function App() {
   let orgTodos = ["some text here", "another one", "and a little bit of it"];
@@ -56,7 +56,6 @@ function App() {
       />
       {/* create react icons fontAwesome */}
       {/* use uuid for keys in react */}
-      {/* disable on empty */}
     </div>
   );
 }
