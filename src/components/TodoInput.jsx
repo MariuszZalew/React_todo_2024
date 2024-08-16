@@ -26,7 +26,7 @@ export const TodoInput = ({ setTodos, inputP, setInputP }) => {
       />
       <button
         onClick={setTodosAndClear}
-        className="p-3.5 rounded-[14px] bg-white   hover:opacity-70 cursor-pointer text-xl"
+        className="p-3.5 rounded-[14px] bg-white   hover:opacity-70 cursor-pointer text-xl hover:text-blue-600 transition-all duration-700 hover:scale-110"
         disabled={isButtonDisabled}
       >
         Add
