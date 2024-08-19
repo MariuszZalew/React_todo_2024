@@ -56,7 +56,6 @@ function App() {
         handleEdit={handleEditTodos}
       />
       {/* create react icons fontAwesome */}
-      {/* use uuid for keys in react */}
     </div>
   );
 }

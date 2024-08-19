@@ -22,7 +22,7 @@ export const TodoCard = ({ children, index, del, handleEdit }) => {
   return (
     <li
       className={`flex items-center p-3.5 rounded-[14px] bg-white gap-3 animate-fall ${
-        isDeleting ? "animate-fallOff" : ""
+        isDeleting ? "animate-fallOffDown" : ""
       } ${isEditing ? "animate-fallOffUpwards" : ""}`}
       style={{ animationDelay: `${index * 0.2}s` }}
     >
