@@ -2,9 +2,10 @@ import { useState } from "react";
 
 export const TodoCard = ({ children, index, del, handleEdit }) => {
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
 
   let changeInner = () => {
-    setIsDeleting(true);
+    setIsEditing(true);
     setTimeout(() => {
       handleEdit(children);
       del(children);
@@ -22,7 +23,7 @@ export const TodoCard = ({ children, index, del, handleEdit }) => {
     <li
       className={`flex items-center p-3.5 rounded-[14px] bg-white gap-3 animate-fall ${
         isDeleting ? "animate-fallOff" : ""
-      }`}
+      } ${isEditing ? "animate-fallOffUpwards" : ""}`}
       style={{ animationDelay: `${index * 0.2}s` }}
     >
       <p className="flex-1 font-inter">{children}</p>
