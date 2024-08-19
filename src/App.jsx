@@ -12,6 +12,7 @@ function App() {
 
   function handleSetTodos(input) {
     let newTodos = [...todos, input];
+    newTodos = Array.from(new Set(newTodos));
     persistData(newTodos);
     setTodos(newTodos);
   }
@@ -55,7 +56,6 @@ function App() {
         handleEdit={handleEditTodos}
       />
       {/* create react icons fontAwesome */}
-      {/* use uuid for keys in react */}
     </div>
   );
 }
