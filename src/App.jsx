@@ -12,6 +12,7 @@ function App() {
 
   function handleSetTodos(input) {
     let newTodos = [...todos, input];
+    newTodos = Array.from(new Set(newTodos));
     persistData(newTodos);
     setTodos(newTodos);
   }
